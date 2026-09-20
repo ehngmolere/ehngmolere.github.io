@@ -2,13 +2,13 @@
   "name": "ehngmolere",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ehngmolere.github.io/ehngmolere.github.io",
+  "homepage": "https://ehngmolere.github.io",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "publish": "node scripts/publish.js",
+    "deploy": "node scripts/publish.js"
   },
   "dependencies": {
     "bootstrap": "^5.3.1",

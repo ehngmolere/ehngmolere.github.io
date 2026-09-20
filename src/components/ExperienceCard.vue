@@ -31,8 +31,8 @@ export default {
 
 <style scoped>
 .experience-card { margin-bottom: 3rem; }
-.company-logo { border-radius: 0.5rem; height: 64px; margin-bottom: 1rem; object-fit: contain; width: 64px; }
-.company-mark { align-items: center; background: #123b5d; border-radius: 0.5rem; color: #fff; display: inline-flex; font-size: 1.1rem; font-weight: 700; height: 64px; justify-content: center; margin-bottom: 1rem; width: 64px; }
+.company-logo { border-radius: var(--radius-md); height: 64px; margin-bottom: 1rem; object-fit: contain; width: 64px; }
+.company-mark { align-items: center; background: var(--color-primary); border-radius: var(--radius-md); color: #fff; display: inline-flex; font-size: 1.1rem; font-weight: 700; height: 64px; justify-content: center; margin-bottom: 1rem; width: 64px; }
 .experience-card h2 { font-size: 1.5rem; }
 .experience-card h4 { font-size: 1.05rem; }
 .experience-card ul { padding-left: 1.25rem; }

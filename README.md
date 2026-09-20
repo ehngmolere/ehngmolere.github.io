@@ -1,29 +1,42 @@
-# ehngmolere
+# Emeric Molère
 
-## Project setup
-```
+Personal portfolio website for Emeric Molère, DevOps Engineer.
+
+[Visit the website](https://ehngmolere.github.io)
+
+## Prerequisites
+
+- Node.js 18 or newer
+- npm 9 or newer
+
+## Quick start
+
+Install the dependencies and start the local development server:
+
+```bash
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+The application is then available at `http://localhost:8080`.
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Project commands
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+| Command | Description |
+| --- | --- |
+| `npm run serve` | Start the development server with hot reload. |
+| `npm run build` | Compile and minify the production build. |
+| `npm run lint` | Run ESLint. |
+| `npm run publish` | Internal GitHub Actions command used to publish the `dist/` directory. |
 
-### Libraries used
+## Deployment
 
-https://devicon.dev
-https://fontawesome.com
+After a pull request is merged into `main`, GitHub Actions builds the application and publishes the `dist/` directory to the `gh-pages` branch automatically. Configure GitHub Pages to deploy from the `gh-pages` branch and the `/ (root)` directory.
+
+## Libraries
+
+- [Bootstrap](https://getbootstrap.com/) provides the layout and utility styles.
+- [Devicon](https://devicon.dev) provides technology icons.
+- [Font Awesome](https://fontawesome.com) provides interface icons.
+
+See the [Vue CLI configuration reference](https://cli.vuejs.org/config/) for project configuration options.

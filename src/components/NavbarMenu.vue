@@ -42,7 +42,7 @@
 
 <style scoped>
 .site-navbar {
-  background: #123b5d;
+  background: var(--color-primary);
   box-shadow: 0 2px 12px rgba(18, 59, 93, 0.18);
   position: relative;
   z-index: 10;
@@ -74,7 +74,7 @@
   align-items: center;
   background: #ffffff;
   border-radius: 0.4rem;
-  color: #123b5d;
+  color: var(--color-primary);
   display: inline-flex;
   height: 34px;
   justify-content: center;
@@ -107,7 +107,7 @@
 .nav-link:hover,
 .nav-link-active {
   background: #ffffff;
-  color: #123b5d;
+  color: var(--color-primary);
 }
 
 .social-links {

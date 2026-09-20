@@ -1,8 +1,8 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/ehngmolere.github.io/' : '/',
+  publicPath: '/',
   chainWebpack: (config) => {
     config.plugin('html').tap((args) => {
-      args[0].favicon = 'favicon.ico';
+      args[0].favicon = false;
       return args;
     });
   }

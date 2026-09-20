@@ -1,0 +1,10 @@
+:root {
+	--color-primary: #123b5d;
+	--color-muted: #526579;
+	--color-accent: #198754;
+	--color-surface: #f8fafc;
+	--color-soft: #e8f0f5;
+	--color-border: #d8e3eb;
+	--radius-sm: 0.4rem;
+	--radius-md: 0.5rem;
+}

@@ -48,7 +48,7 @@ export default {
   name: 'MainPage',
   computed: {
     imagePath() {
-      return require('@/img/emolere.jpg');
+      return require('@/img/emolere.webp');
     },
     cvPath() {
       return `${process.env.BASE_URL}EMolere_Resume.pdf`;

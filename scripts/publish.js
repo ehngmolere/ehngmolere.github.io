@@ -18,8 +18,25 @@ if (build.status !== 0) {
   process.exit(build.status ?? 1);
 }
 
+const commitMessage = spawnSync('git', ['log', '-1', '--pretty=%s'], {
+  encoding: 'utf8',
+}).stdout.trim();
+
+if (!commitMessage) {
+  console.error('Unable to determine the main branch commit message.');
+  process.exit(1);
+}
+
 const repositoryUrl = `https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git`;
-const publish = spawnSync('npx', ['gh-pages', '-d', 'dist', '--repo', repositoryUrl], {
+const publish = spawnSync('npx', [
+  'gh-pages',
+  '-d',
+  'dist',
+  '--repo',
+  repositoryUrl,
+  '--message',
+  commitMessage,
+], {
   stdio: 'inherit',
 });
 process.exit(publish.status ?? 1);

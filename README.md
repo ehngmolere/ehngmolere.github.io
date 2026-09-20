@@ -27,17 +27,11 @@ The application is then available at `http://localhost:8080`.
 | `npm run serve` | Start the development server with hot reload. |
 | `npm run build` | Compile and minify the production build. |
 | `npm run lint` | Run ESLint. |
-| `npm run deploy` | Build and publish the `dist/` directory to GitHub Pages. |
+| `npm run publish` | Internal GitHub Actions command used to publish the `dist/` directory. |
 
 ## Deployment
 
-The deployment command publishes the `dist/` directory to the `gh-pages` branch:
-
-```bash
-npm run deploy
-```
-
-In the repository settings, configure GitHub Pages to deploy from the `gh-pages` branch and the `/ (root)` directory.
+After a pull request is merged into `main`, GitHub Actions builds the application and publishes the `dist/` directory to the `gh-pages` branch automatically. Configure GitHub Pages to deploy from the `gh-pages` branch and the `/ (root)` directory.
 
 ## Libraries
 

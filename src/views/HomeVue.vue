@@ -51,7 +51,7 @@ export default {
       return require('@/img/emolere.webp');
     },
     cvPath() {
-      return `${process.env.BASE_URL}EMolere_Resume.pdf`;
+      return `${process.env.BASE_URL}emolere_resume.pdf`;
     }
   },
   props: {

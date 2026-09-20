@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    (function () {
+      var base = '/ehngmolere.github.io/';
+      var path = location.pathname + location.search + location.hash;
+      sessionStorage.redirect = path;
+      location.replace(base);
+    }());
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>

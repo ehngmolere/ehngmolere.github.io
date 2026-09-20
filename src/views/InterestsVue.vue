@@ -3,7 +3,7 @@
     <header class="interest-header">
       <p class="interest-eyebrow">Beyond technology</p>
       <h1>Interests</h1>
-      <p>Books, ideas and time spent outdoors.</p>
+      <p>Time spent outdoors and books that I have read.</p>
     </header>
 
     <section class="interest-section">
@@ -45,7 +45,7 @@ export default {
     return {
       hikes: [
         { title: 'Lourdes', icon: 'fa-route', photo: '/Lourdes.webp', photoAlt: 'Landscape near Lourdes', date: 'July 2025', duration: '7 days', distance: 153, elevationGain: '1,600', elevationLoss: '1,600', description: "A pilgrimage starting from my grandfather's home, undertaken in his memory and as a personal tribute to him." },
-        { title: 'GR20 · Pointe de Bavella variant', icon: 'fa-mountain', photo: '/gr-20.webp', photoAlt: 'GR20 trail in Corsica', date: 'September 2025', duration: '7 days', distance: 90, elevationGain: '5,000', elevationLoss: '5,000', description: 'A mountain trek through Corsica via the Pointe de Bavella variant, combining preparation, endurance and adaptability in a demanding natural environment.' },
+        { title: 'GR20 · Bavella variant', icon: 'fa-mountain', photo: '/gr-20.webp', photoAlt: 'GR20 trail in Corsica', date: 'September 2025', duration: '7 days', distance: 90, elevationGain: '5,000', elevationLoss: '5,000', description: 'A mountain trek through Corsica via the "Pointe de Bavella" variant, combining preparation, endurance and adaptability in a demanding natural environment.' },
         { title: 'GR34 · Crozon Peninsula', icon: 'fa-water', photo: '/gr34.webp', photoAlt: 'GR34 coastal trail on the Crozon Peninsula', date: 'September 2026', duration: '7 days', distance: 158, elevationGain: '4,000', elevationLoss: '4,000', description: 'A coastal hike focused on discovering the landscapes, paths and maritime heritage of Brittany.' }
       ],
       books: [
@@ -68,13 +68,13 @@ export default {
 }
 
 .interest-header {
-  border-bottom: 1px solid #d8e3eb;
+  border-bottom: 1px solid var(--color-border);
   margin-bottom: 2.5rem;
   padding-bottom: 2rem;
 }
 
 .interest-eyebrow {
-  color: #123b5d;
+  color: var(--color-primary);
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -83,14 +83,14 @@ export default {
 }
 
 .interest-header h1 {
-  color: #123b5d;
+  color: var(--color-primary);
   font-size: clamp(2.25rem, 5vw, 4rem);
   margin-bottom: 0.75rem;
 }
 
 .interest-header p:last-child,
 .section-heading p {
-  color: #526579;
+  color: var(--color-muted);
 }
 
 .interest-section {
@@ -129,13 +129,13 @@ export default {
 }
 
 .section-icon-books {
-  background: #e8f0f5;
-  color: #123b5d;
+  background: var(--color-soft);
+  color: var(--color-primary);
 }
 
 .section-icon-hiking {
   background: #e8f3ed;
-  color: #198754;
+  color: var(--color-accent);
 }
 
 .interest-grid {

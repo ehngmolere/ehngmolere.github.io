@@ -31,10 +31,10 @@ export default {
 <style scoped>
 .hiking-card {
   align-items: flex-start;
-  background: #f8fafc;
-  border: 1px solid #d8e3eb;
-  border-left: 5px solid #198754;
-  border-radius: 0.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 5px solid var(--color-accent);
+  border-radius: var(--radius-md);
   display: flex;
   gap: 1rem;
   min-height: 82px;
@@ -44,13 +44,13 @@ export default {
 .hiking-card h3,
 .hiking-card p { margin: 0; }
 .hiking-card h3 { font-size: 1.05rem; }
-.hiking-card p { color: #526579; margin-top: 0.25rem; }
-.hiking-card-icon { color: #198754; flex: 0 0 2.5rem; font-size: 2rem; width: 2.5rem; }
+.hiking-card p { color: var(--color-muted); margin-top: 0.25rem; }
+.hiking-card-icon { color: var(--color-accent); flex: 0 0 2.5rem; font-size: 2rem; width: 2.5rem; }
 .hiking-photo { border-radius: 0.4rem; flex: 0 0 128px; height: 92px; object-fit: cover; width: 128px; }
-.hike-date { color: #198754 !important; display: flex; flex-wrap: wrap; font-size: 0.8rem; font-weight: 700; gap: 0.75rem; text-transform: uppercase; }
+.hike-date { color: var(--color-accent) !important; display: flex; flex-wrap: wrap; font-size: 0.8rem; font-weight: 700; gap: 0.75rem; text-transform: uppercase; }
 .hike-date i, .hike-stats i { margin-right: 0.2rem; }
 .hike-stats { display: flex; flex-wrap: wrap; font-size: 0.8rem; gap: 0.65rem; margin-top: 0.45rem !important; }
-.hike-stats i { color: #198754; }
+.hike-stats i { color: var(--color-accent); }
 
 @media (max-width: 576px) {
   .hiking-photo { flex-basis: 104px; height: 80px; width: 104px; }

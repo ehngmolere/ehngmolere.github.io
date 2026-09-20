@@ -20,9 +20,9 @@ export default {
 <style scoped>
 .interest-card {
   align-items: center;
-  background: #f8fafc;
-  border: 1px solid #d8e3eb;
-  border-radius: 0.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
   display: flex;
   gap: 1rem;
   min-height: 82px;
@@ -30,7 +30,7 @@ export default {
 }
 
 .interest-card-icon {
-  color: #123b5d;
+  color: var(--color-primary);
   font-size: 1.45rem;
   width: 2rem;
 }
@@ -45,7 +45,7 @@ export default {
 }
 
 .interest-card p {
-  color: #526579;
+  color: var(--color-muted);
   margin-top: 0.25rem;
 }
 </style>
